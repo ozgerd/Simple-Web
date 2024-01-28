@@ -1,0 +1,185 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Poppins', sans-serif;
+	background-image: url("/public/salesforce-8.jpg");
+	background-size: cover;
+}
+
+header {
+	height: 100px;
+	border-bottom: 2px solid rgba(255, 255, 255, 0.09);
+}
+
+.container {
+	width: 80%;
+	margin: 0 auto;
+}
+
+/* header start */
+header nav {
+	display: flex;
+	justify-content: space-between ;
+	align-items: center;
+	height: 100%;
+}
+
+.logo {
+	width: 9%;
+	margin-top: 10px;
+	cursor: pointer;
+	transition: all 0.25s ease;
+}
+
+.logo:hover {
+	opacity: 0.06;
+}
+
+.logo-img {
+	width: 100%;
+}
+
+nav ul {
+	list-style: none;
+	display: flex;
+	column-gap: 30px;
+}
+
+nav ul a {
+	color: white;
+	font-weight: 600;
+	text-decoration: none;
+	transition: color .25s ease;
+}
+nav ul a:hover {
+	color: rgb(211, 231, 249);
+}
+
+.menu {
+	display: flex;
+	align-items: center;
+	column-gap: 48px;
+}
+
+.menu-button {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 12px 24px;
+	border-radius: 56px;
+	cursor: pointer;
+	transition: all .0.1s ease;
+}
+
+.menu-button:hover {
+	color: rgb(188, 222, 251);
+	background-color: rgba(253, 251, 251, 0.06);
+}
+/* header end */
+
+/* section start */
+.content {
+	color: white;
+	height: calc(100vh - 100px);
+	padding-top: 150px;
+}
+
+.content h1 {
+	font-size: 45px;
+	text-align: center;
+}
+
+.content p {
+	font-size: 22px;
+	text-align: center;
+	margin-top: 30px;
+}
+
+.content .links {
+display: flex;
+justify-content: center;
+margin-top: 10px;
+column-gap: 16px;;
+}
+
+.content .links a {
+	background-color: white;
+	color: rgb(74, 146, 255);
+	width: 280px;
+	padding: 20px;
+	font-size: 18px;
+	text-align: center;
+	text-decoration: none;
+	border-radius: 56px;
+	cursor: pointer;
+	transition: all .25s ease-in;
+}
+
+.content .links a:hover {
+	background-color:  rgb(74, 146, 255);
+	color: white;
+}
+/* section end */
+
+/* responsive start */
+@media (max-width: 576px) {
+
+	body {
+	background-image: url("/public/salesforce-8.jpg");
+	background-size: auto;
+	}
+
+	.container {
+		width: 100%;
+		padding-left: 12px;
+		padding-right: 12px;
+	}
+	.menu-button {
+	color: rgb(255, 255, 255);
+	text-decoration: none;
+	background-color: rgba(255, 255, 255, 0.2);
+	padding: 10px 10px;
+	border-radius: 30px;
+	cursor: pointer;
+	}
+	
+	.menu ul {
+		column-gap: 15px;
+	}
+
+	.logo {
+		width: 20%;
+		margin-top: 10px;
+	}
+
+.content {
+	padding-top: 50px;
+}
+
+.content h1 {
+	font-size: 28px;
+}
+
+.content p {
+	font-size: 15px;
+	margin: 10px 30px;
+}
+
+.content .links {
+	margin-top: 40px;
+	flex-direction: column;
+	align-items: center;
+	row-gap: 1rem;
+}
+.content .links a  {
+padding: 14px;
+width: 90%;
+}
+}
+/* responsive end */
